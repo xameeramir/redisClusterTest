@@ -1,7 +1,7 @@
 var RedisCluster = require('redis-cluster').clusterClient;
 var redis = RedisCluster;
 var redisPubSub = RedisCluster;
-var redisHost = "localhost"; //change the host here
+var redisHost = "AMAZON ELASTICACHE CLUSTER URL"; //change the host here
 var redisPort = "6379"; //change the port here
 
 var assert = require('assert');
