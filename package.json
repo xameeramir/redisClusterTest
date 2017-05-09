@@ -1,11 +1,11 @@
 {
-  "name": "redisClusterTest",
+  "name": "redisclustertest",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node startRedisClusterTest.js"
+    "start": "node startPoorMansClusterClient.js"
   },
   "dependencies": {
     "redis": "^2.6.2",
