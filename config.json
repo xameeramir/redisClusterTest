@@ -1,0 +1,10 @@
+{
+    "redisClusterHost": "AMAZON ELASTICACHE CLUSTER URL",
+    "redisClusterPort": "6379",
+    "redisClusterNode1": "AMAZON ELASTICACHE CLUSTER INDIVIDUAL INSTANCE URL",
+    "redisClusterNode1Port": "6379",
+    "redisClusterNode2": "AMAZON ELASTICACHE CLUSTER INDIVIDUAL INSTANCE URL",
+    "redisClusterNode2Port": "6379",
+    "redisClusterNode3": "AMAZON ELASTICACHE CLUSTER INDIVIDUAL INSTANCE URL",
+    "redisClusterNode3Port": "6379"
+}

@@ -1,12 +1,11 @@
 var RedisCluster = require('redis-cluster').clusterClient;
 var redis = RedisCluster;
 var redisPubSub = RedisCluster;
-var redisHost = "AMAZON ELASTICACHE CLUSTER URL"; //change the host here
-var redisPort = "6379"; //change the port here
+var config = require("config.json");
 
 var assert = require('assert');
 
-var firstLink = redisHost + ":" + redisPort; // Used to discover the rest of the cluster 
+var firstLink = config.redisClusterHost + ":" + config.redisClusterPort; // Used to discover the rest of the cluster 
 new redis.clusterInstance(firstLink, function (err, r) {
   if (err) throw err;
   r.set('foo', 'bar', function (err, reply) {
