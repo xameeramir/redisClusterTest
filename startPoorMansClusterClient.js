@@ -1,6 +1,6 @@
 var poorMansClusterClient = require('redis-cluster').poorMansClusterClient;
 var assert = require('assert');
-var config = require("config.json");
+var config = require("./config.json");
 
 var cluster = [
   { name: 'redis01', link: config.redisClusterNode1 + config.redisClusterNode1Port, slots: [0, 5462], options: { max_attempts: 5 } },
