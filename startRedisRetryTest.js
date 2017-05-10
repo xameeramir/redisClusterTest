@@ -1,8 +1,7 @@
 var redis = require("redis");
-var port = 6379;
-var host = "AMAZON ELASTICACHE CLUSTER URL";
+var config = require("config.json");
 
-var client = redis.createClient(port, host, {
+var client = redis.createClient(config.redisClusterPort, config.redisClusterHost, {
   retryStrategy: function (times) {
     console.log('Lost Redis connection, reattempting');
     return Math.min(times * 2, 2000);
