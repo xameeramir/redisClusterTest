@@ -1,5 +1,5 @@
 var redis = require('redis');
-var config = require("config.json");
+var config = require("./config.json");
 var redisClient = redis.createClient(config.redisClusterPort, config.redisClusterHost,  { no_ready_check:  true }); //creates a new client
 
 //catch all errors
