@@ -15,4 +15,16 @@ var redis = new RedisClustr({
     }
 });
 
-redis.set('key', 'value');
+//connect to redis
+redis.on("connect", function () {
+  console.log("connected");
+});
+
+//check the functioning
+redis.set("framework", "AngularJS", function (err, reply) {
+  console.log("redis.set " , reply);
+});
+
+redis.get("framework", function (err, reply) {
+  console.log("redis.get ", reply);
+});
