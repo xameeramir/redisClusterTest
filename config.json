@@ -8,3 +8,4 @@
     "redisClusterNode3": "AMAZON ELASTICACHE CLUSTER INDIVIDUAL INSTANCE URL",
     "redisClusterNode3Port": "6379"
 }
+
