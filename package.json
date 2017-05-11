@@ -5,11 +5,12 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node startRedisTest.js"
+    "start": "node startRedis-ClustrTest.js"
   },
   "dependencies": {
     "redis": "^2.6.2",
-    "redis-cluster": "0.0.8"
+    "redis-cluster": "0.0.8",
+    "redis-clustr": "^1.5.2"
   },
   "author": "",
   "license": "ISC"

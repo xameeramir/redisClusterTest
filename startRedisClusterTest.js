@@ -1,7 +1,7 @@
 var RedisCluster = require('redis-cluster').clusterClient;
 var redis = RedisCluster;
 var redisPubSub = RedisCluster;
-var config = require("config.json");
+var config = require("./config.json");
 
 var assert = require('assert');
 

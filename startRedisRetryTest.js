@@ -1,5 +1,5 @@
 var redis = require("redis");
-var config = require("config.json");
+var config = require("./config.json");
 
 var client = redis.createClient(config.redisClusterPort, config.redisClusterHost, {
   retryStrategy: function (times) {
